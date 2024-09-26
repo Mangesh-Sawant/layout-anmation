@@ -1,0 +1,67 @@
+.parent-container {
+  padding: 40px;
+}
+
+.card {
+  color: pink;
+  height: 100vh;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  gap:20px;
+}
+
+
+.left-card {
+  width: 25%;
+  background: #ea0e34;
+  height: 40vh;
+  position: sticky;
+  top: 40px;
+  transition: transform 0.6s ease, opacity 0.3s ease;
+}
+
+.left-card.hidden {
+  opacity: 0;
+  width: 0;
+  transform: translateX(-100%);
+}
+
+.right-card {
+  width: 25%;
+  background: yellow;
+  height: 40vh;
+  position: sticky;
+  top: 40px;
+  transition: transform 0.6s ease, opacity 0.3s ease;
+}
+
+.right-card.hidden {
+  opacity: 0; /* Hide the card */
+  width: 0;
+  transform: translateX(100%); /* Move right for the right card */
+}
+
+.middle-card {
+  width: 50%;
+  background: olive;
+  transition: transform 0.6s ease, opacity 0.3s ease;
+}
+
+.middle-card.hidden {
+  flex: 1; /* Take the remaining space */
+  background: orange; /* Change color for visibility */
+  transform: translateY(-4%);
+}
+
+.footer {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

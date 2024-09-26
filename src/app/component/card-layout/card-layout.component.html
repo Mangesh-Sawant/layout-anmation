@@ -1,0 +1,10 @@
+<div class="parent-container">
+  <div class="cards-container" [class.expanded]="isExpanded">
+    <div class="card left-card" [class.hidden]="isExpanded">Left Card</div>
+    <div class="card middle-card" [class.hidden]="isExpanded">Middle Card</div>
+    <div class="card right-card" [class.hidden]="isExpanded">Right Card</div>
+  </div>
+  <div class="footer">
+    <button (click)="toggleCards()">Toggle Cards</button>
+  </div>
+</div>
